@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Jumpserver 0.3.3\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-11 13:36+0800\n"
+"POT-Creation-Date: 2018-06-14 15:58+0800\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: ibuler <ibuler@qq.com>\n"
 "Language-Team: Jumpserver team<ibuler@qq.com>\n"
@@ -118,7 +118,7 @@ msgstr "端口"
 msgid "Asset"
 msgstr "资产"
 
-#: assets/forms/domain.py:54 assets/forms/user.py:79 assets/forms/user.py:131
+#: assets/forms/domain.py:54 assets/forms/user.py:79 assets/forms/user.py:138
 #: assets/models/base.py:21 assets/models/cluster.py:18
 #: assets/models/domain.py:17 assets/models/group.py:20
 #: assets/models/label.py:17 assets/templates/assets/admin_user_detail.html:56
@@ -147,7 +147,7 @@ msgstr "资产"
 msgid "Name"
 msgstr "名称"
 
-#: assets/forms/domain.py:55 assets/forms/user.py:80 assets/forms/user.py:132
+#: assets/forms/domain.py:55 assets/forms/user.py:80 assets/forms/user.py:139
 #: assets/models/base.py:22 assets/templates/assets/admin_user_detail.html:60
 #: assets/templates/assets/admin_user_list.html:24
 #: assets/templates/assets/domain_gateway_list.html:60
@@ -192,21 +192,21 @@ msgstr "ssh密钥不合法"
 msgid "Password and private key file must be input one"
 msgstr "密码和私钥, 必须输入一个"
 
-#: assets/forms/user.py:118
+#: assets/forms/user.py:124
 msgid "* Automatic login mode, must fill in the username."
 msgstr "自动登录模式，必须填写用户名"
 
-#: assets/forms/user.py:137
+#: assets/forms/user.py:144
 msgid "Auto push system user to asset"
 msgstr "自动推送系统用户到资产"
 
-#: assets/forms/user.py:138
+#: assets/forms/user.py:145
 msgid ""
 "High level will be using login asset as default, if user was granted more "
 "than 2 system user"
 msgstr "高优先级的系统用户将会作为默认登录用户"
 
-#: assets/forms/user.py:139
+#: assets/forms/user.py:147
 msgid ""
 "If you choose manual login mode, you do not need to fill in the username and "
 "password."
@@ -444,7 +444,7 @@ msgstr "默认资产组"
 #: terminal/templates/terminal/session_list.html:71 users/forms.py:282
 #: users/models/user.py:31 users/models/user.py:333
 #: users/templates/users/user_group_detail.html:78
-#: users/templates/users/user_group_list.html:13 users/views/user.py:359
+#: users/templates/users/user_group_list.html:13 users/views/user.py:361
 msgid "User"
 msgstr "用户"
 
@@ -1987,7 +1987,7 @@ msgstr "文档"
 #: users/templates/users/user_profile.html:17
 #: users/templates/users/user_profile_update.html:37
 #: users/templates/users/user_profile_update.html:57
-#: users/templates/users/user_pubkey_update.html:37 users/views/user.py:341
+#: users/templates/users/user_pubkey_update.html:37 users/views/user.py:343
 msgid "Profile"
 msgstr "个人信息"
 
@@ -2045,8 +2045,8 @@ msgstr "关闭"
 #: templates/_nav.html:10 users/views/group.py:28 users/views/group.py:44
 #: users/views/group.py:62 users/views/group.py:79 users/views/group.py:95
 #: users/views/login.py:277 users/views/login.py:335 users/views/user.py:65
-#: users/views/user.py:80 users/views/user.py:102 users/views/user.py:173
-#: users/views/user.py:328 users/views/user.py:378 users/views/user.py:413
+#: users/views/user.py:80 users/views/user.py:102 users/views/user.py:175
+#: users/views/user.py:330 users/views/user.py:380 users/views/user.py:415
 msgid "Users"
 msgstr "用户管理"
 
@@ -2088,6 +2088,10 @@ msgstr "终端管理"
 #: templates/_nav.html:56
 msgid "Job Center"
 msgstr "作业中心"
+
+#: templates/captcha/field.html:7
+msgid "Please input a valid captcha"
+msgstr "请输入一有效的验证码"
 
 #: templates/captcha/image.html:3
 msgid "Play CAPTCHA as audio file"
@@ -2680,7 +2684,7 @@ msgid "Reset link will be generated and sent to the user. "
 msgstr "生成重置密码连接，通过邮件发送给用户"
 
 #: users/templates/users/user_detail.html:19
-#: users/templates/users/user_granted_asset.html:18 users/views/user.py:174
+#: users/templates/users/user_granted_asset.html:18 users/views/user.py:176
 msgid "User detail"
 msgstr "用户详情"
 
@@ -2815,8 +2819,8 @@ msgstr "用户删除失败"
 msgid "Administrator Settings force MFA login"
 msgstr "管理员设置强制使用MFA登录"
 
-#: users/templates/users/user_profile.html:116 users/views/user.py:203
-#: users/views/user.py:257
+#: users/templates/users/user_profile.html:116 users/views/user.py:205
+#: users/views/user.py:259
 msgid "User groups"
 msgstr "用户组"
 
@@ -3020,7 +3024,7 @@ msgstr "用户组授权资产"
 msgid "Please enable cookies and try again."
 msgstr "设置你的浏览器支持cookie"
 
-#: users/views/login.py:128 users/views/user.py:498 users/views/user.py:523
+#: users/views/login.py:128 users/views/user.py:500 users/views/user.py:525
 msgid "MFA code invalid"
 msgstr "MFA码认证失败"
 
@@ -3061,7 +3065,7 @@ msgstr "Token错误或失效"
 msgid "Password not same"
 msgstr "密码不一致"
 
-#: users/views/login.py:239 users/views/user.py:115 users/views/user.py:396
+#: users/views/login.py:239 users/views/user.py:118 users/views/user.py:398
 msgid "* Your password does not meet the requirements"
 msgstr "* 您的密码不符合要求"
 
@@ -3073,46 +3077,46 @@ msgstr "首次登陆"
 msgid "Login log list"
 msgstr "登录日志"
 
-#: users/views/user.py:127
+#: users/views/user.py:129
 msgid "Bulk update user success"
 msgstr "批量更新用户成功"
 
-#: users/views/user.py:232
+#: users/views/user.py:234
 msgid "Invalid file."
 msgstr "文件不合法"
 
-#: users/views/user.py:329
+#: users/views/user.py:331
 msgid "User granted assets"
 msgstr "用户授权资产"
 
-#: users/views/user.py:360
+#: users/views/user.py:362
 msgid "Profile setting"
 msgstr "个人信息设置"
 
-#: users/views/user.py:379
+#: users/views/user.py:381
 msgid "Password update"
 msgstr "密码更新"
 
-#: users/views/user.py:414
+#: users/views/user.py:416
 msgid "Public key update"
 msgstr "密钥更新"
 
-#: users/views/user.py:455
+#: users/views/user.py:457
 msgid "Password invalid"
 msgstr "用户名或密码无效"
 
-#: users/views/user.py:549
+#: users/views/user.py:551
 msgid "MFA enable success"
 msgstr "MFA 绑定成功"
 
-#: users/views/user.py:550
+#: users/views/user.py:552
 msgid "MFA enable success, return login page"
 msgstr "MFA 绑定成功，返回到登录页面"
 
-#: users/views/user.py:552
+#: users/views/user.py:554
 msgid "MFA disable success"
 msgstr "MFA 解绑成功"
 
-#: users/views/user.py:553
+#: users/views/user.py:555
 msgid "MFA disable success, return login page"
 msgstr "MFA 解绑成功，返回登录页面"
